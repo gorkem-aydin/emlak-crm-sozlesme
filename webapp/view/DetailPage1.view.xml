@@ -1,0 +1,85 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.sap.build.standard.emlakKonut.controller.DetailPage1">
+	<Page title="Detail Page" showHeader="true" showFooter="true" showNavButton="false">
+		<content>
+			<ObjectHeader intro="Intro." title="Title" icon="sap-icon://iphone" number="1,000" numberUnit="USD" numberState="None" titleActive="false" backgroundDesign="Translucent" condensed="false" visible="true">
+				<attributes/>
+				<statuses/>
+				<markers/>
+			</ObjectHeader>
+			<sap.ui.core:ComponentContainer width="100%" xmlns:sap.ui.core="sap.ui.core" id="container0"/>
+			<IconTabBar expandable="false" expanded="true" applyContentPadding="false" backgroundDesign="Transparent" upperCase="false" visible="true" selectedKey="Ok" class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Critical" id="filter3"/>
+					<IconTabFilter icon="sap-icon://home" iconColor="Negative" text="Emlak" count="22" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false" modelContextChange="test">
+						<content>
+							<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0" headerText="TEST">
+							    <headerToolbar>
+							        <Toolbar id="toolbar3">
+							            <Title text="Header"/>
+							            <ToolbarSpacer/>
+							            <Button icon="sap-icon://settings"/>
+							            </Toolbar>
+							        
+							    </headerToolbar>
+							    <content>
+							        <Text text="Panel Content" id="text22"/>
+							        
+							    </content>
+							    </Panel>
+							<Table noDataText="Drop column list items here and columns in the area above" id="table1">
+							    <items>
+							        <ColumnListItem type="Active" id="item3">
+							            <cells>
+							                <Text text="Row 1 Cell 1" id="text16"/>
+							                <Text text="Row 1 Cell 2" id="text17"/>
+							                <Text text="Row 1 Cell 3" id="text18"/></cells>
+							        </ColumnListItem>
+							    </items>
+							    <columns>
+							        <Column id="column4">
+							            <header>
+							                <Label text="Header 1" id="label0"/>
+							            </header>
+							        </Column>
+							        <Column id="column5">
+							            <header>
+							                <Label text="Header 2" id="label1"/>
+							            </header>
+							        </Column>
+							        <Column id="column6">
+							            <header>
+							                <Label text="Header 3" id="label2"/>
+							            </header>
+							        </Column></columns></Table>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+						<content>
+							<Text text="Attachments go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter icon="sap-icon://notes" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+						<content>
+							<Text text="Notes go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</IconTabFilter>
+				</items>
+				<content>
+					<Text text="Tab Bar Content goes here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+				</content>
+			</IconTabBar>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="onSave"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+	</Page>
+</mvc:View>
